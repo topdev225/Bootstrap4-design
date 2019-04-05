@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Get Started</title>
+    <meta name="author" content="Mohamed Amine Dakak">
+    <meta name="description" content="Admin Template">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="app-header app-header-dark app-header-custom">
+        <div class="top-bar">
+          <div class="top-bar-brand">
+            <a href="index.html">PINGER</a>
+          </div>
+          <div class="top-bar-list">
+            <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+              <div class="dropdown justify-content-center">
+                <button class="btn-account d-none d-md-flex pr-lg-5 pl-lg-5 no-border" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="35,50">
+                  <span class="user-avatar user-avatar-md"><i class="icon ion-md-contact profile-placeholder"></i></span>
+                  <span class="account-summary d-none d-lg-block">
+                    <span class="account-name primary-font-family-regular">John</span>
+                  </span>
+                  <i class="icon ion-ios-arrow-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="icon ion-md-person"></i> Profile</a>
+                  <a class="dropdown-item" href="#"><i class="icon ion-md-exit"></i> Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Edi Photo Modal -->
+      <div class="modal fade edit-photo-modal" id="editPhotoModal" tabindex="-1" role="dialog" aria-labelledby="editPhotoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="editPhotoModal">Edit Photo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group mt-4">
+                <div class="input-group col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                  <input type="text" class="form-control" id="image" placeholder="Select image">
+                  <label class="input-group-append" for="ai1"><span class="input-group-text"><i class="icon ion-ios-link"></i></span></label>
+                </div>
+              </div>
+              <p>Must be an actual picture of you! Logo, clip-a, group pictures and digitally altered images are not allowed.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-custom">Save</button>
+              <button type="button" class="btn btn-secondary btn-custom btn-custom-outline" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="app-main">
+        <div class="wrapper">
+          <div class="page">
+            <div class="page-inner">
+              <div class="page-section">
+                <div class="row display-flex justify-content-center">
+                  <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card transparent-card get-started-card">
+                      <div class="card-body">
+                        <h1 class="card-title"> Get Started </h1>
+                        <p>Lorem ipsum dolor sit amet, in egestas proin lacus scelerisque, ut ipsum bibendum diam ociis quia, urna nibh, ante
+                          pellentesque nam. Et sit urna diam phasellus, esse tempor mauris mauris, aenean dolor urna consequat. Quis dui elit donec
+                          placerat diam, mi vehicula, nunc et, velit nec metus ornare pede sit, nec tellus sed suspendisse ut mauris. Molestias elit
+                          turpis.</p>
+                        <div class="row display-flex justify-content-center mb-5">
+                          <div class="col-md-4 display-flex justify-content-center flex-direction-column align-items-center">
+                            <div><i class="icon ion-md-contact profile-placeholder"></i></div>
+                            <button type="button" class="btn btn-lg btn-outline-primary btn-add-photo" data-toggle="modal" data-target="#editPhotoModal"><i class="icon ion-md-add mr-1"></i> Add Profile Photo</button>
+                          </div>
+                        </div>
+                        <form class="needs-validation" novalidate="">
+                          <div class="form-row">
+                            <div class="col-md-6 mb-4">
+                              <label for="firstName">Address</label> <input type="text" class="form-control" id="firstName" required="" placeholder="Enter your address">
+                              <div class="invalid-feedback"> Address is required. </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4 arrow-select">
+                              <label for="sel1">State</label>
+                              <select class="custom-select" id="sel1" required="">
+                                <option value=""> Select </option>
+                                <option> Option 1</option>
+                                <option> Option 2</option>
+                              </select>
+                              <i class="icon ion-ios-arrow-down"></i>
+                              <div class="invalid-feedback"> State is required. </div>
+                            </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="col-md-6 mb-4">
+                              <label for="firstName">ZIP Code</label> <input type="text" class="form-control" id="zipCode" required="" placeholder="Enter ZIP code">
+                              <div class="invalid-feedback"> ZIP code is required. </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4 arrow-select">
+                              <label for="sel1">Job Role</label>
+                              <select class="custom-select" id="sel1" required="">
+                                <option value=""> Select </option>
+                                <option> Option 1</option>
+                                <option> Option 2</option>
+                              </select>
+                              <i class="icon ion-ios-arrow-down"></i>
+                              <div class="invalid-feedback"> Job role is required. </div>
+                            </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="col-md-6 mb-4">
+                              <label for="firstName">EIN</label> <input type="text" class="form-control" id="ein" required="" placeholder="Enter EIN">
+                              <div class="invalid-feedback"> EIN is required. </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4 arrow-select">
+                              <label for="firstName">SSN</label> <input type="text" class="form-control" id="ssn" required="" placeholder="Enter Last 4 digits of your SSN">
+                              <div class="invalid-feedback"> SSN is required. </div>
+                            </div>
+                          </div>
+
+                          <div class="display-flex justify-content-center">
+                            <button class="btn btn-primary btn-lg btn-custom mt-4" type="submit">Get Started</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
